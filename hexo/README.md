@@ -11,3 +11,6 @@ npm install hexo-deployer-git --save  #安装这个才能部署到github
 hexo clean
 hexo generate
 hexo server
+
+编译并立即部署到git
+hexo g -d
