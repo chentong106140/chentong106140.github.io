@@ -1,0 +1,17 @@
+friend_links:
+  - name: 百度
+    desc: 百度一下
+    link: http://www.baidu.com
+
+  - name: 网易
+    desc: 网易
+    link: http://www.sohu.com
+
+build_tools:
+  - name: 腾讯
+    desc: 腾讯
+    link: http://www.qq.com
+
+  - name: 阿里巴巴
+    desc: 阿里巴巴
+    link: http://www.taobao.com

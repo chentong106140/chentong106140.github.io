@@ -4,15 +4,60 @@
 
 # Site
 ## 网站标题
-title: Morgan的网络博客
+title: 陈通的网络博客
 ## 网站副标题
-subtitle: Morgan的网络博客
+subtitle: 陈通的网络博客
+
+## 页面配置信息
+
+
+# banner显示的简短介绍
+subtitle_desc: 日常学习与兴趣交流
+
 ## 网站描述
-description: 这是一个免费的网络博客
+description: 日常学习与兴趣交流的个人博客
 ## 网站关键字
-keywords: Morgan的网络博客 中国江苏南京 技术 vue java html js javascript
-## 作者
-author: Morgan
+keywords: 陈通的网络博客 中国江苏南京 技术 vue java html js javascript ,前端博客, 前端, 程序员, 前端开发
+
+# 博客的favicon图标，支持本地及在线两种方式，本地请将图标放置于 themes/hexo-theme-skapp/source/img 目录下
+favicon_ico: http://oo12ugek5.bkt.clouddn.com/blog/images/favicon.ico
+
+# 博客的左上角logo图标，支持本地及在线两种方式
+# logo: http://oo12ugek5.bkt.clouddn.com/images/logo-text-white.png
+logo: /img/logo.png
+# 头像/二维码（用于显示在底部）二选一
+avatar: /img/avatar.png
+qrcode: /img/avatar.png
+
+# 文章的默认封面
+default_cover: http://oo12ugek5.bkt.clouddn.com/images/default_cover.png
+
+# header 的背景图
+header_cover: http://oo12ugek5.bkt.clouddn.com/blog/images/banner-bg.jpg
+
+# 404 页面的背景图
+error_page_bg: http://oo12ugek5.bkt.clouddn.com/blog/images/dogs.jpg
+
+# 页面加载loading图标
+loader_img: http://oo12ugek5.bkt.clouddn.com/blog/images/loader.gif
+
+authorName: 陈通
+
+# 站长信息
+author:
+  name: 陈通
+  link: https://chentong106140.github.io
+
+# 用于页面 footer 的站长信息
+about:
+  info: 本站主要用于分享日常学习、生活及工作的一些心得总结，欢迎转载。
+  address: JiagnSu, NanJing , China
+  email: a1061404981@qq.com
+# 个人介绍
+introduction: 不思量，自难忘
+
+
+
 ## 语言
 language: zh-cn
 ## 时区
@@ -109,7 +154,7 @@ pagination_dir: page
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
 ## 当前主题名称。值为false时禁用主题
-theme: landscape
+theme: hexo-theme-skapp
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -118,3 +163,77 @@ deploy:
   type: git
   repo: git@github.com:chentong106140/chentong106140.github.io.git
   branch: master
+
+
+## 以下是主题依赖配置
+
+# Sass
+node_sass:
+  outputStyle: nested
+  precision: 5
+  sourceComments: false
+
+# Autoprefixer
+autoprefixer:
+  exclude:
+    - '*.min.css'
+  browsers:
+    - 'last 2 versions'
+
+# Lunr
+lunr:
+  field: all
+  fulltext: false
+  path: assets/lunr/
+
+# filter_cleanup
+hfc_useref:
+  enable: true
+  concat: true
+
+hfc_html:
+  enable: true
+  exclude:
+
+hfc_css:
+  enable: true
+  exclude:
+    - '*.min.css'
+
+hfc_js:
+  enable: true
+  mangle: true
+  exclude:
+    - '*.min.js'
+
+hfc_img:
+  enable: false
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: false
+  progressive: false
+
+hfc_favicons:
+  enable: false
+  src: img/blog-logo.png
+  target: img/
+
+icons:
+    android: true
+    appleIcon: true
+    appleStartup: false
+    coast: false
+    favicons: true
+    firefox: false
+    opengraph: false
+    windows: true
+    yandex: false
+
+menu:
+    home: /
+    archive: /archives
+    about: /about
+
+
+
