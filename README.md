@@ -10,6 +10,8 @@
 
 六：修改deploy分之下的.gitgnore，添加忽略.idea等配置，最终上传此分支所有代码
 
+七：切记：hexo部署代码，不能放在github的master分支下
+
 
 npm install hexo-cli -g   
 
